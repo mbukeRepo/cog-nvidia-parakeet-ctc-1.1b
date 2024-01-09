@@ -10,8 +10,6 @@ build:
   system_packages:
     - "libsndfile1"
     - "ffmpeg"
-  #   - "libgl1-mesa-glx"
-  #   - "libglib2.0-0"
 
   # python version in the form '3.11' or '3.11.4'
   python_version: "3.10.12"
