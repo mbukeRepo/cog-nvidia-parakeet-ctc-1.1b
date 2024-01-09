@@ -19,7 +19,7 @@ class Predictor(BasePredictor):
         # The model returns a tuple of lists, each containing a single string (transcription)
         transcription = self.asr_model.transcribe([str(audio_file)])
         if transcription and transcription[0]:
-            return transcription[0][0]
+            return transcription[0]
         else:
             print("Error: Transcription failed or returned empty result.")
             return ""
